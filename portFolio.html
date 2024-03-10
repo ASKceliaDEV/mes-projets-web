@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style-portfolio.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
+    <title>PortFolio</title>
+</head>
+<body>
+    <header>
+        <div class="entet">
+            <div class="logo">
+                <img src="./media/celiaDEV-logo.png" style="margin-bottom: 10px;" alt="">
+            </div>
+            <div class="menu">
+              <ul>
+                <li><a href="hero">HOME</a> </li>
+                <li><a href="A propos">about</a></li>
+                <li><a href="compétence">skills</a></li>
+            </div>
+            <div class="humberger-btn">
+                <i class="fa-solid fa-bars" style="color: #673cadef;"></i>
+            </div>
+        </div>
+    <div class="nav-links">
+       <ul> <li><a href="hero">HOME</a> </li>
+        <li><a href="A propos">about</a></li>
+        <li><a href="compétence">skills</a></li>
+    </ul>
+    </div>
+    </header>
+</body>
+<script>
+    const hamburgerBtn = document.querySelector(".hamburger-btn")
+    const navLinks = document.querySelector(".nav-links")
+    hamburgerBtn.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>
